@@ -1,0 +1,204 @@
+body {
+  margin-top: 30px;
+  background-color: rgb(39, 38, 53);
+}
+.navbar {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.navbar-brand img {
+  height: 10vh;
+}
+.navbar-nav {
+  align-items: center;
+}
+.nav-item {
+  margin-right: 10px;
+}
+.Intro {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.IntroText {
+  color: #fff;
+  font-size: 32px;
+  font-family: "Cinzel";
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.IntroText p {
+  font-size: 20px;
+  font-family: "VT323";
+  opacity: 0.8;
+}
+.languages {
+  color: #fff;
+}
+.languages h3 {
+  margin-top: 70px;
+  margin-bottom: 20px;
+  font-family: "Cinzel";
+  text-align: center;
+}
+.languagesnames {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+  margin-left: 20px;
+  margin-right: 10px;
+}
+.languagesnames p {
+  border: 1px solid rgb(60, 58, 80);
+  padding: 3px 10px 3px 10px;
+  margin-right: 10px;
+  border-radius: 20px;
+  transition: 0.8s ease;
+  font-family: "Courier New";
+  font-size: 26px;
+}
+.languagesnames p:hover {
+  background-color: #fff;
+  color: rgb(39, 38, 53);
+  cursor: pointer;
+}
+.Intro .IntroPhoto {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+#Projects h1 {
+  position: relative;
+  margin-left: 10%;
+  background-color: #2a2b2f;
+  color: #2a2b2f;
+  -webkit-text-stroke: 1px #383d52;
+  width: fit-content;
+  padding: 10px 20px 10px 20px;
+  border: 3px solid #fff;
+  text-transform: uppercase;
+  overflow: hidden;
+  border-radius: 10px;
+  font-family: "Courier New", Courier, monospace;
+}
+#Projects h1:before {
+  content: attr(data-text);
+  position: absolute;
+  width: 0;
+  color: #fff;
+  -webkit-text-stroke: 0px #383d52;
+  border-right: 2px solid #fff;
+  overflow: hidden;
+  animation: animate 6s linear infinite;
+}
+@keyframes animate {
+  0%,
+  50% {
+    width: 0;
+  }
+  25%,
+  75% {
+    width: 85%;
+  }
+}
+.project {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.project .card {
+  background: #2a2b2f;
+  position: relative;
+  width: 320px;
+  height: 360px;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  margin: 40px;
+  padding: 15px;
+  border: 2px solid rgb(61, 33, 66);
+  transition: 0.3s;
+}
+.project .card:hover {
+  transform: translate(0, -10px);
+  border: 5px solid blueviolet;
+  cursor: pointer;
+}
+.project .card .title {
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  margin-bottom: 15px;
+  min-height: 55px;
+}
+.project .card .Description {
+  color: rgba(255, 255, 255, 0.6);
+  text-align: justify;
+  margin-bottom: 15px;
+  min-height: 140px;
+}
+.project .card .links i {
+  width: 100%;
+  text-align: center;
+  font-size: 32px;
+  color: #fff;
+  margin-bottom: 15px;
+}
+.project .card .links a {
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 10px 15px 10px 15px;
+  background: #000;
+  color: #fff;
+  border-radius: 20px;
+}
+.project .card .links a:hover {
+  background: #fff;
+  color: #000;
+  transition: 0.8s ease-in;
+}
+.contactus {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.contactus .myLogo {
+  width: 100%;
+}
+.contactus .quote {
+  color: #fff;
+  align-items: center;
+  margin: 20px 0px 20px 0px;
+  font-family: "Dancing Script";
+  font-size: 28px;
+}
+.contactus .socialmedias {
+  display: flexbox;
+  color: white;
+  font-size: 32px;
+  margin-bottom: 50px;
+}
+.contactus .socialmedias i {
+  margin: 0px 10px 10px 0px;
+  border-radius: 50%;
+  border: 1px solid rgb(67, 65, 88);
+  padding: 10px;
+  transition: 0.6s ease;
+}
+.contactus .socialmedias i:hover {
+  background-color: #fff;
+  color: rgb(39, 38, 53);
+}
+.contactus .socialmedias a {
+  color: white;
+}
