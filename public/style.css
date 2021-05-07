@@ -15,6 +15,9 @@ body {
 .nav-item {
   margin-right: 10px;
 }
+.material-icons {
+  font-size: 16px;
+}
 .Intro {
   margin-top: 50px;
   display: flex;
