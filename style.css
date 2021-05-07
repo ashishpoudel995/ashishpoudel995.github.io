@@ -15,6 +15,9 @@ body {
 .nav-item {
   margin-right: 10px;
 }
+.material-icons {
+  font-size: 16px;
+}
 .Intro {
   margin-top: 50px;
   display: flex;
@@ -132,6 +135,8 @@ body {
   transform: translate(0, -10px);
   border: 5px solid blueviolet;
   cursor: pointer;
+  width: 340px;
+  height: 380px;
 }
 .project .card .title {
   color: rgba(255, 255, 255, 0.8);
