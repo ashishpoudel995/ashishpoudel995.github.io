@@ -16,12 +16,9 @@ body {
   margin-right: 10px;
 }
 .material-icons {
-  font-size: 16px;
+  font-size: 18px;
   color: gold;
-}
-.material-icons:hover {
-  font-size: 22px;
-  animation: handwave 6s linear infinite;
+  animation: handwave 3s linear infinite;
 }
 @keyframes handwave {
   0% {
