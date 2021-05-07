@@ -17,6 +17,9 @@ class ContactUs extends React.Component{
                 <a href="https://github.com/ashishpoudel995"><i class="fab fa-github"/></a>
                 <a href="mailto:ashishpoudel995@gmail.com"><i class="far fa-envelope"/></a>
                 </div>
+                <div className="copyright">
+                    Made by Ashish with <i class="fas fa-heart"/>
+                </div>
             </div>
         )
     }
