@@ -219,7 +219,6 @@ body {
   display: flexbox;
   color: white;
   font-size: 32px;
-  margin-bottom: 50px;
 }
 .contactus .socialmedias i {
   margin: 0px 10px 10px 0px;
@@ -234,4 +233,14 @@ body {
 }
 .contactus .socialmedias a {
   color: white;
+}
+.copyright {
+  font-size: 13px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  color: #fff;
+  font-family: Consolas;
+}
+.copyright i {
+  color: red;
 }
