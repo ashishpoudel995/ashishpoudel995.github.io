@@ -178,6 +178,15 @@ body {
   margin-bottom: 15px;
   min-height: 140px;
 }
+.project .card .linksparent {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.project .card .linksparent .links {
+  margin: 5px;
+}
 .project .card .links i {
   width: 100%;
   text-align: center;
