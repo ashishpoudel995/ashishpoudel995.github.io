@@ -4,6 +4,7 @@ export const Projectlists = [
     Description:
       "HempIN is an online shopping platform for purchasing Hemp Products. FrontEnd of HempIN is designed using React JS, Redux, CSS, Bootstrap, Semantic UI.",
     Link: "https://github.com/ashishpoudel995/HempIN",
+    Demo: "https://ashishpoudel995.github.io/HempIN/",
   },
   {
     Title: "Parallelization of DES Algorithm Using Open MP",
