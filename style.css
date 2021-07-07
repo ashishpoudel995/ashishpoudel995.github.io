@@ -84,6 +84,8 @@ body {
   margin-bottom: 100px;
   margin-left: 20px;
   margin-right: 10px;
+  align-items: center;
+  justify-content: center;
 }
 .languagesnames p {
   border: 1px solid rgb(60, 58, 80);
@@ -163,8 +165,6 @@ body {
   transform: translate(0, -10px);
   border: 5px solid blueviolet;
   cursor: pointer;
-  width: 340px;
-  height: 380px;
 }
 .project .card .title {
   color: rgba(255, 255, 255, 0.8);
