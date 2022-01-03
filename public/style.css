@@ -69,91 +69,116 @@ body {
   font-family: "VT323";
   opacity: 0.8;
 }
-.languages {
+.languages-container {
+  width: 100%;
+  height: 100%;
+  background-color: whitesmoke;
   color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
-.languages h3 {
+.languages-container h3 {
+  width: 100%;
   margin-top: 70px;
   margin-bottom: 20px;
   font-family: "Cinzel";
   text-align: center;
+  color: rgb(39, 38, 53);
+  font-weight: bold;
 }
-.languagesnames {
+.languagesicons {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 100px;
-  margin-left: 20px;
-  margin-right: 10px;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  margin-top: 5%;
 }
-.languagesnames p {
-  border: 1px solid rgb(60, 58, 80);
-  padding: 3px 10px 3px 10px;
-  margin-right: 10px;
-  border-radius: 20px;
-  transition: 0.8s ease;
-  font-family: "Courier New";
-  font-size: 26px;
+.languages-container .illustration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 500px;
+  margin-right: 5%;
 }
-.languagesnames p:hover {
-  background-color: #fff;
-  color: rgb(39, 38, 53);
-  cursor: pointer;
+.languages-container .illustration img {
+  width: 100%;
+  height: 100%;
+}
+@media only screen and (max-width: 900) {
+  .languages-container .illustration {
+    width: 100%;
+    height: 100%;
+  }
+}
+.languagesicons img {
+  margin: 0% 5% 5% 0%;
+}
+.introduction {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.introduction .intro-para {
+  width: 40%;
+  color: whitesmoke;
+  opacity: 0.8;
+  font-family: "Roboto";
+  font-size: 1.2em;
+  margin: 5%;
+}
+.introduction .intro-para h1 {
+  margin-bottom: 5%;
+  opacity: 0.9;
+}
+.introduction .intro-para p span {
+  font-weight: bold;
+  opacity: 1;
+  font-style: italic;
 }
 .Intro .IntroPhoto {
-  width: 100%;
+  width: 50%;
   justify-content: center;
   align-items: center;
   display: flex;
+  float: right;
 }
-#Projects h1 {
-  position: relative;
-  margin-left: 10%;
-  background-color: #2a2b2f;
-  color: #2a2b2f;
-  -webkit-text-stroke: 1px #383d52;
+.Intro .IntroPhoto img {
+  width: 80%;
+  height: 80%;
+}
+#Projects {
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Projects h3 {
+  color: white;
   width: fit-content;
-  padding: 10px 20px 10px 20px;
-  border: 3px solid #fff;
-  text-transform: uppercase;
+  text-align: center;
   overflow: hidden;
-  border-radius: 10px;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Cinzel";
 }
-#Projects h1:before {
-  content: attr(data-text);
-  position: absolute;
-  width: 0;
-  color: #fff;
-  -webkit-text-stroke: 0px #383d52;
-  border-right: 2px solid #fff;
-  overflow: hidden;
-  animation: animate 6s linear infinite;
-}
-@keyframes animate {
-  0%,
-  50% {
-    width: 0;
-  }
-  25%,
-  75% {
-    width: 85%;
-  }
-}
-.project {
+
+.project,
+.blog {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
 }
-.project .card {
+.project .card,
+.blog .card {
   background: #2a2b2f;
   position: relative;
-  width: 320px;
-  height: 360px;
+  width: 400px;
+  height: 490px;
   border-radius: 10px;
-  overflow: hidden;
+  overflow: auto;
   display: flex;
   align-items: center;
   margin: 40px;
@@ -161,22 +186,40 @@ body {
   border: 2px solid rgb(61, 33, 66);
   transition: 0.3s;
 }
-.project .card:hover {
+@media only screen and (max-width: 900px) {
+  .project .card,
+  .blog .card {
+    height: fit-content;
+  }
+  .introduction .intro-para,
+  .Intro .IntroPhoto {
+    width: 100%;
+  }
+  .Intro .IntroPhoto img {
+    width: 100%;
+    height: 100%;
+  }
+}
+.project .card:hover,
+.blog .card:hover {
   transform: translate(0, -10px);
-  border: 5px solid blueviolet;
+  border: 2px solid blueviolet;
   cursor: pointer;
 }
-.project .card .title {
+.project .card .title,
+.blog .card .title {
   color: rgba(255, 255, 255, 0.8);
   text-align: center;
-  margin-bottom: 15px;
-  min-height: 55px;
+  margin-top: 5%;
 }
 .project .card .Description {
   color: rgba(255, 255, 255, 0.6);
   text-align: justify;
-  margin-bottom: 15px;
-  min-height: 140px;
+  min-height: 100px;
+  width: 80%;
+  margin-bottom: 10px;
+  font-size: 0.9em;
+  opacity: 0.9;
 }
 .project .card .linksparent {
   display: flex;
@@ -190,43 +233,63 @@ body {
 .project .card .links i {
   width: 100%;
   text-align: center;
-  font-size: 32px;
+  font-size: 28px;
   color: #fff;
   margin-bottom: 15px;
 }
 .project .card .links a {
   width: 100%;
   text-align: center;
-  font-size: 16px;
+  font-size: 12px;
   text-decoration: none;
   padding: 10px 15px 10px 15px;
-  background: #000;
+  background: rgb(39, 38, 53);
+  border: 1px solid #f5f5f5;
   color: #fff;
   border-radius: 20px;
 }
 .project .card .links a:hover {
-  background: #fff;
-  color: #000;
-  transition: 0.8s ease-in;
+  border: 1px solid blueviolet;
+  transition: 0.2s ease-in-out;
+  opacity: 0.6;
+}
+.project .card .banner img,
+.blogs .card .cover img {
+  width: 100%;
+  height: 200px;
+}
+@media only screen and (max-width: 900px) {
+  .project .card .banner img {
+    height: 100%;
+  }
 }
 .contactus {
   align-items: center;
   text-align: center;
   justify-content: center;
+  background-color: whitesmoke;
+  padding-bottom: 2%;
+  padding-top: 5%;
+}
+.contactus h3 {
+  font-family: "Cinzel";
+  font-weight: bold;
+  padding-bottom: 1%;
 }
 .contactus .myLogo {
   width: 100%;
 }
 .contactus .quote {
-  color: #fff;
+  color: rgb(39, 38, 53);
   align-items: center;
   margin: 20px 0px 20px 0px;
   font-family: "Dancing Script";
   font-size: 28px;
+  font-weight: bold;
 }
 .contactus .socialmedias {
   display: flexbox;
-  color: white;
+  color: rgb(39, 38, 53);
   font-size: 32px;
 }
 .contactus .socialmedias i {
@@ -237,19 +300,92 @@ body {
   transition: 0.6s ease;
 }
 .contactus .socialmedias i:hover {
-  background-color: #fff;
-  color: rgb(39, 38, 53);
+  background-color: rgb(39, 38, 53);
+  color: #fff;
 }
 .contactus .socialmedias a {
-  color: white;
+  color: #272635;
 }
 .copyright {
   font-size: 13px;
   margin-top: 10px;
   margin-bottom: 50px;
-  color: #fff;
+  color: rgb(39, 38, 53);
   font-family: Consolas;
 }
 .copyright i {
-  color: red;
+  color: rgb(39, 38, 53);
+}
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  color: rgb(39, 38, 53);
+}
+.err {
+  color: whitesmoke;
+  text-align: center;
+  font-size: 1.2em;
+}
+.experience {
+  color: whitesmoke;
+  background-color: rgb(39, 38, 53);
+}
+.experience .heading {
+  padding-top: 5%;
+}
+.experience .heading h3 {
+  font-family: "Cinzel";
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+}
+.experience .timeline {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.experience .timeline .timeline-illustration {
+  width: 30%;
+}
+.experience .timeline .timeline-illustration img {
+  width: 100%;
+  height: 100%;
+}
+.experience .timeline .timeline-chart {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 900px) {
+  .experience .timeline .timeline-illustration {
+    width: 100%;
+  }
+}
+.blogs {
+  color: whitesmoke;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.blogs h3 {
+  width: 100%;
+  text-align: center;
+  font-family: "Cinzel";
+  margin-top: 5%;
+}
+.blog .card {
+  height: fit-content;
+}
+.blog .card a {
+  text-decoration: none;
+  color: blueviolet;
+}
+.blog .card a:hover {
+  color: whitesmoke;
 }
