@@ -7,7 +7,7 @@ class Intro extends React.Component {
     return (
       <div className="Intro">
         <div className="IntroText">
-          Software Development Enthusiast, Web Developer
+          Software Development Enthusiast & Web Developer
           <p>
             I design and Code. I make web applications usually with React
             JS,HTML and CSS.
