@@ -95,12 +95,15 @@ body {
   align-items: center;
   margin-top: 5%;
 }
+.languages{
+  width: 400px;
+}
 .languages-container .illustration {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  width: 500px;
+  width: 450px;
   margin-right: 5%;
 }
 .languages-container .illustration img {
@@ -111,6 +114,9 @@ body {
   .languages-container .illustration {
     width: 100%;
     height: 100%;
+  }
+  .languages{
+    width: 100%;
   }
 }
 .languagesicons img {
