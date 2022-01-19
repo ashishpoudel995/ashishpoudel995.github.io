@@ -9,19 +9,13 @@ const ContactUs = () => {
         <div className="quote">Learning Everyday ...</div>
       </div>
       <div className="socialmedias">
-        <a href="https://www.facebook.com/aashizzpoudel01/">
-          <i className="fab fa-facebook" />
-        </a>
-        <a href="https://www.linkedin.com/in/ashish-poudel-500861193/">
+        <a href="https://www.linkedin.com/in/ashish-poudel-500861193/" target="_new">
           <i className="fab fa-linkedin-in" />
         </a>
-        <a href="https://www.instagram.com/aashizzpoudel01/">
-          <i className="fab fa-instagram" />
-        </a>
-        <a href="https://twitter.com/aashizzpoudel01">
+        <a href="https://twitter.com/ashish_poudel_" target="_new">
           <i className="fab fa-twitter" />
         </a>
-        <a href="https://github.com/ashishpoudel995">
+        <a href="https://github.com/ashishpoudel995" target="_new">
           <i className="fab fa-github" />
         </a>
         <a href="mailto:ashishpoudel995@gmail.com">

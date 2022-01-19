@@ -9,14 +9,14 @@ class NavigationBar extends React.Component {
     const { location } = this.props;
     const homepath = location.pathname === "/" ? "active" : "";
     const projectspath = location.pathname === "/projects" ? "active" : "";
-    const blogspath = location.pathname === "/blogs" ? "active" : "";
 
     return (
       <div>
         <nav className="navbar navbar-expand-lg navbar-dark">
-          <span className="navbar-brand">
+        <Router>
+          <Link className="navbar-brand" to="/">
             <img src={Logo} alt="Logo" />
-          </span>
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -33,7 +33,6 @@ class NavigationBar extends React.Component {
             <span className="icon-bar"></span>
             <span className="icon-bar"></span>
           </button>
-          <Router>
             <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
               <ul className="navbar-nav ml-auto">
                 <li className={`nav-item ${homepath}`}>
@@ -46,10 +45,10 @@ class NavigationBar extends React.Component {
                     Projects
                   </Link>
                 </li>
-                <li className={`nav-item ${blogspath}`}>
-                  <Link className="nav-link" to="/blogs">
-                    Blogs
-                  </Link>
+                <li className="nav-item">
+                  <a className="nav-link" href="https://ashishpoudel.substack.com/" target="_new">
+                  <i class="fas fa-external-link-alt"/>&nbsp;Blogs
+                  </a>
                 </li>
                 <li className="nav-item">
                   <a className="nav-link" href={Resume} target="_new">

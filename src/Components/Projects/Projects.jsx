@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { getRepos } from "../../utils/getRepos";
 import { Loader } from "../Loader.jsx";
 
-const Projects = (props) => {
+const Projects = () => {
   const [loading, setLoading] = useState(true);
   const [Projectlists, setProjectlists] = useState([]);
 
