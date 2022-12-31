@@ -7,11 +7,8 @@ class Intro extends React.Component {
     return (
       <div className="Intro">
         <div className="IntroText">
-          Software Development Enthusiast & Web Developer
-          <p>
-            I design and Code. I make web applications usually with React
-            JS,HTML and CSS.
-          </p>
+          Full Stack Software Developer
+          <p>Think - Design - Code</p>
         </div>
         <div className="introduction">
           <div className="intro-para">
@@ -19,15 +16,15 @@ class Intro extends React.Component {
               ABOUT <span>ME</span>
             </h1>
             <p>
-              Hey, I'm <span>Ashish Poudel.</span> I'm currently pursuing{" "}
-              <span>
-                B.Tech. Computer Science and Engineering from Vellore Institute
-                of Technology, Vellore.
-              </span>
+              Hey, I'm <span>Ashish Poudel.</span> I'm currently working as an{" "}
+              <span>Associate Software Engineer</span> at{" "}
+              <span>Wibmo, a PayU Company</span> in the Access Control Server
+              (ACS) Line of Business.
               <br />
               <br />
-              I'm <span>passionate</span> to learn new tools, explore new
-              domains.Currently, I'm invested in developing web projects using
+              I'm <span>passionate</span> to learn new tools and explore new
+              domains.Currently, I'm invested in developing projects using
+              Vert.x, Java and MySQL. During my spare hours, I play around with
               React JS, Typescript, Node JS and MongoDB.
             </p>
           </div>
