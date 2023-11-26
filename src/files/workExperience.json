@@ -1,0 +1,27 @@
+{
+    "experienceList": [
+        {
+            "title": "Associate Software Engineer",
+            "org": "Wibmo, a PayU Company",
+            "startDate": "2022/06/20",
+            "highlights": [
+                "-Designed and Implemented Transaction Flow for Authentication of Rupay Cards.",
+                "-Dedicated to enhancing the success rate of e-commerce transactions on a daily basis, and to date, have contributed to an 8% improvement in success rates for clients.",
+                "-Engineered APIs to streamline data exchange between banks and the Access Control Server (ACS).",
+                "-Integrated ACS with bank switch APIs, enabling seamless customer data retrieval during transactions.",
+                "-Implemented Card Block Functionality for banks, enabling card blocking at the ACS after multiple incorrect OTP entries.",
+                "-Designed and Implemented ATM PIN Based Authentication Flow for Card Not Present (CNP) Transactions."
+            ]
+        },
+        {
+            "title": "Web Application Developer Intern",
+            "org": "Andy Infosec",
+            "startDate": "2020/11/30",
+            "endDate": "2021/01/30",
+            "highlights": [
+                "-Designed and Developed Jeopardy Capture The Flag (CTF).",
+                "-Integrated all ten OWASP vulnerabilities in a web application."
+            ]
+        }
+    ]
+}

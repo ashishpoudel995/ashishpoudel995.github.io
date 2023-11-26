@@ -18,8 +18,7 @@ class Intro extends React.Component {
             <p>
               Hey, I'm <span>Ashish Poudel.</span> I'm currently working as an{" "}
               <span>Associate Software Engineer</span> at{" "}
-              <span>Wibmo, a PayU Company</span> in the Access Control Server
-              (ACS) Line of Business.
+              <span>Wibmo, a PayU Company.</span>
               <br />
               <br />
               I'm <span>passionate</span> to learn new tools and explore new
