@@ -365,9 +365,14 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  max-width: 70%;
+  text-align: justify;
 }
 @media only screen and (max-width: 900px) {
   .experience .timeline .timeline-illustration {
     width: 100%;
+  }
+  .experience .timeline .timeline-chart {
+    max-width: 100%;
   }
 }
