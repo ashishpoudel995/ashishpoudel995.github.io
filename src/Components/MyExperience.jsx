@@ -33,14 +33,15 @@ export const MyExperience = () => {
             <Container>
               <YearContent startDate="2022/06/20" />
               <BodyContent>
-                <Section title="Associate Software Engineer">
+                <Section title="Software Engineer">
                   <Description
                     variant="subtitle"
-                    text="Wibmo, a PayU Company"
+                    text="PayU (Wibmo)"
                   />
-                  <Description text="- Part of Access Control Server(ACS) line of business" />
-                  <Description text="- Developing various features for clients like SBIC, PNB, BOB, etc." />
-                  <Description text="- Working on projects involving card schemes like Visa, Mastercard, AmEx, Rupay, etc." />
+                  <Description text="- Part of Access Control Server(ACS) team serving more than 300 issuers for authentication of transactions." />
+                  <Description text="- Feature Development/enhancement and SR improvement for issuers like SBIC, Kotak, Axis, ICICI, PNB, etc." />
+                  <Description text="- Collaborating with cross-functional teams to develop high-quality software solutions, following Agile principles." />
+                  <Description text="- Expedited time-critical certification task to ensure compliance for Mastercard, AmEx and Rupay protocols."/>
                 </Section>
               </BodyContent>
             </Container>
